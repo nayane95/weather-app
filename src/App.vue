@@ -2,7 +2,7 @@
   <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp >16 ? 'warm' : '' ">
     <main>
       <div class="search-box">
-        <input type="text" class="search-bar" placeholder="Search..." v-model="query" @keypress="fetchweather"/>
+        <input type="text" class="search-bar" placeholder="Enter City..." v-model="query" @keypress="fetchweather"/>
       </div>
 
 
